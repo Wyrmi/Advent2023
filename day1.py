@@ -1,6 +1,4 @@
 import fileinput
-from pathlib import Path
-import os
 import sys
 filepath = 'Advent2023/data1.txt'
 newnum = 'test'
