@@ -10,6 +10,7 @@ for line in fileinput.input(filepath, inplace = False):
         elif x.lstrip('-').isdigit():
             numbers.append(-1 * int(x.lstrip('-')))
     bool = True
+    numbers.reverse() #comment this out for p1
     ls = numbers
     ite = []
     while(bool):
