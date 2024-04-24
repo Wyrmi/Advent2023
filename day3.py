@@ -1,4 +1,4 @@
-with open('Advent2023/data3.txt') as f:
+with open('data/3.txt') as f:
     #ls is filedata with each line as a member in a string list
     ls = f.read().splitlines()
 #sum is the sum of all of the number adjacent to a symbol

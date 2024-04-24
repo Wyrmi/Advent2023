@@ -1,6 +1,6 @@
 import fileinput
 import sys
-filepath = 'data1.txt'
+filepath = 'data/1.txt'
 newnum = 'test'
 sum = 0
 for line in fileinput.input(filepath, inplace = False):

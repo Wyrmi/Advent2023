@@ -1,6 +1,6 @@
 import fileinput
 import sys
-filepath = 'Advent2023/data2.txt'
+filepath = 'data/2.txt'
 red = 12
 green = 13
 blue = 14

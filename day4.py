@@ -1,5 +1,5 @@
 import fileinput
-filepath = 'Advent2023/data4.txt'
+filepath = 'data/4.txt'
 sum = 0
 winnums = []
 nums = []

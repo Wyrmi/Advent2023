@@ -1,6 +1,6 @@
 import fileinput
 from itertools import pairwise
-filepath = 'Advent2023/data9.txt'
+filepath = 'data/9.txt'
 sum = 0
 for line in fileinput.input(filepath, inplace = False):
     numbers = []

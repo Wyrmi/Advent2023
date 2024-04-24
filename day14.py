@@ -1,5 +1,5 @@
 import fileinput
-filepath = 'Advent2023/data14.txt'
+filepath = 'data/14.txt'
 sum = 0
 listlist = []
 i = 0

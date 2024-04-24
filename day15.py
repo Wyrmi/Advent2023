@@ -1,5 +1,5 @@
 import fileinput
-filepath = 'Advent2023/data15.txt'
+filepath = 'data/15.txt'
 sum = 0
 tsum = 0
 sline = []
