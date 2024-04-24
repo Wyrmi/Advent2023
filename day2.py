@@ -1,5 +1,4 @@
 import fileinput
-import sys
 filepath = 'data/2.txt'
 red = 12
 green = 13
@@ -26,7 +25,29 @@ for line in fileinput.input(filepath, inplace = False):
                     isok = False
             bool = False
     if isok:
-        sys.stdout.write(words[1] + ' ok\n')
         sum = sum + int(words[1].strip(":"))
-sys.stdout.write('sum is ' + str(sum))
-
+print('sum is ' + str(sum))
+print('\n')
+sum = 0
+for line in fileinput.input(filepath, inplace = False):
+    words = line.split()
+    b=0
+    g=0
+    r=0
+    for w in words:
+        if w.isdigit():
+            bool = True
+            num = int(w)
+        elif bool:
+            if w[0] == "b":
+                if b < num:
+                    b = num
+            elif w[0] == "g":
+                if g < num:
+                    g = num
+            elif w[0] == "r":
+                if r < num:
+                    r = num
+            bool = False
+    sum = sum + b*g*r
+print('sum is ' + str(sum))
