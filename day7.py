@@ -74,3 +74,4 @@ for h in hands:
     sum = sum + i * int(h[1])
     i+=1
 print(sum)
+

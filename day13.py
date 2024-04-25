@@ -18,6 +18,16 @@ for line in fileinput.input(filepath, inplace = False):
                 listlist[x][y].append(char)
         y = y + 1
         listlist[x].append([])
+
+def compare(a,b):
+    if a == b:
+        return True
+    return False
+
 #check each block in listlist[] for horizontal and vertical symmetries
 #add found symmetries to sum with horizontals multiplied by 100
-print(sum)
+for field in listlist:
+    switch = False
+    for y in range(len(field)-1):
+        switch = compare(field[y], field[y+1])
+#TODO
